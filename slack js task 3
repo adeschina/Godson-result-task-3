@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godson javascripttask#3</title>
+</head>
+<body>
+    <script>
+        /*function that takes one parameter and check if it's divible by a some given values*/
+function parameter(number) {
+    let numarray = [];
+    /*for loop to link my conditional if comparison statement*/
+    for (let i = 1; i <= number; i++){
+
+        if (i % 2 === 0 && i % 3 === 0 && i % 5 ===0) {
+            numarray.push("yu-gi-oh");
+        }else {
+            if (i % 2 === 0) {
+                numarray.push("Yu");
+            }if (i % 2 === 0 && i % 3 === 0) {
+                    numarray.push ("yu-oh");
+                }
+            
+            else if (i % 3 === 0){
+                numarray.push("gi");
+            } if (i % 3 === 0 && i % 5 === 0){
+                    numarray.push("gi-oh");
+                }
+            
+            else if (i % 5 === 0) {
+                numarray.push("oh");
+            }
+            else {
+                numarray.push(i);
+            }
+        }
+    }
+
+return numarray;
+}
+document.write(parameter(100)  + "<br/>" );
+
+document.write(parameter(75) + "<br/>" );
+
+
+    </script>
+    
+</body>
+</html>
